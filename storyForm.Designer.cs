@@ -36,19 +36,19 @@
             // 
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 28.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(73, 31);
+            this.label1.Location = new System.Drawing.Point(57, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(433, 67);
+            this.label1.Size = new System.Drawing.Size(492, 67);
             this.label1.TabIndex = 1;
             this.label1.Text = "The Story So Far...";
             // 
             // storyLabel
             // 
-            this.storyLabel.Font = new System.Drawing.Font("Baskerville Old Face", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.storyLabel.Font = new System.Drawing.Font("Baskerville Old Face", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.storyLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.storyLabel.Location = new System.Drawing.Point(39, 111);
+            this.storyLabel.Location = new System.Drawing.Point(30, 111);
             this.storyLabel.Name = "storyLabel";
-            this.storyLabel.Size = new System.Drawing.Size(510, 532);
+            this.storyLabel.Size = new System.Drawing.Size(528, 532);
             this.storyLabel.TabIndex = 2;
             this.storyLabel.Click += new System.EventHandler(this.storyLabel_Click);
             // 

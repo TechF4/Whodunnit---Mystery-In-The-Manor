@@ -72,6 +72,18 @@
     <Compile Include="suspectsForm.Designer.cs">
       <DependentUpon>suspectsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleForm.Designer.cs">
+      <DependentUpon>TitleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="victimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="victimForm.Designer.cs">
+      <DependentUpon>victimForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="evidenceForm.resx">
       <DependentUpon>evidenceForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -93,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="suspectsForm.resx">
       <DependentUpon>suspectsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleForm.resx">
+      <DependentUpon>TitleForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5146.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalProject.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\finalProject1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

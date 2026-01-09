@@ -56,6 +56,7 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -334,12 +335,24 @@
             this.label20.TabIndex = 21;
             this.label20.Text = "Oliver Grant";
             // 
+            // closeButton
+            // 
+            this.closeButton.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.closeButton.Location = new System.Drawing.Point(443, 698);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(357, 40);
+            this.closeButton.TabIndex = 28;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // suspectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1274, 692);
+            this.ClientSize = new System.Drawing.Size(1253, 763);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.talkToOliver);
             this.Controls.Add(this.examineOliver);
             this.Controls.Add(this.label16);
@@ -404,5 +417,6 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Button closeButton;
     }
 }

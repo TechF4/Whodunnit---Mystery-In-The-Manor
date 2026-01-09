@@ -15,6 +15,17 @@ namespace Final_Project_Whodunnit
         public storyForm()
         {
             InitializeComponent();
+
+            storyLabel.Text = " Dr. Leonard Hale is found dead in his" +
+               " locked study during a storm. Four suspects were in " +
+               "the mansion that night: his wife Evelyn, his son Marcus," +
+               " his colleague Dr. Nina Brooks, and the butler Oliver Grant." +
+               " The player investigates rooms and objects to discover clues." +
+               " Real evidence points to poisoning (Digitalis) and access" +
+               " logs show who could have taken it. Fake evidence " +
+               "(muddy shoes, open window) is placed to mislead." +
+               " The player uses evidence and interviews to identify " +
+               "the killer.";
         }
 
         private void storyForm_Load(object sender, EventArgs e)
@@ -24,16 +35,7 @@ namespace Final_Project_Whodunnit
 
         private void storyLabel_Click(object sender, EventArgs e)
         {
-            storyLabel.Text = " Dr. Leonard Hale is found dead in his" +
-                " locked study during a storm. Four suspects were in " +
-                "the mansion that night: his wife Evelyn, his son Marcus," +
-                " his colleague Dr. Nina Brooks, and the butler Oliver Grant." +
-                " The player investigates rooms and objects to discover clues." +
-                " Real evidence points to poisoning (Digitalis) and access" +
-                " logs show who could have taken it. Fake evidence " +
-                "(muddy shoes, open window) is placed to mislead." +
-                " The player uses evidence and interviews to identify " +
-                "the killer.";
+           
         }
     }
 }

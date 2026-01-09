@@ -47,5 +47,12 @@ namespace Final_Project_Whodunnit
         {
             storyForm.Show();
         }
+
+        victimForm victimForm = new victimForm();
+
+        private void victimButton_Click(object sender, EventArgs e)
+        {
+            victimForm.Show();
+        }
     }
 }

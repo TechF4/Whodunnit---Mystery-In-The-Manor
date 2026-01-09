@@ -83,6 +83,26 @@ namespace Final_Project_Whodunnit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap finalProject {
+            get {
+                object obj = ResourceManager.GetObject("finalProject", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap finalProject1 {
+            get {
+                object obj = ResourceManager.GetObject("finalProject1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap studyFloor {
             get {
                 object obj = ResourceManager.GetObject("studyFloor", resourceCulture);

@@ -16,6 +16,12 @@ namespace Final_Project_Whodunnit
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+             using (var title = new TitleForm())
+            {
+                title.ShowDialog(); // Show the title screen
+            }
+
             Application.Run(new Form1());
         }
     }

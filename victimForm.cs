@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Final_Project_Whodunnit
 {
-    public partial class suspectsForm : Form
+    public partial class victimForm : Form
     {
-        public suspectsForm()
+        public victimForm()
         {
             InitializeComponent();
-        }
-
-        private void closeButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }
