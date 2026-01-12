@@ -62,11 +62,11 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Baskerville Old Face", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 32);
+            this.label1.Location = new System.Drawing.Point(58, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 34);
+            this.label1.Size = new System.Drawing.Size(196, 34);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Evelyn Hale";
+            this.label1.Text = "Evelyn Hale ";
             // 
             // label2
             // 
@@ -81,37 +81,39 @@
             // label3
             // 
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(24, 241);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(258, 96);
+            this.label3.Size = new System.Drawing.Size(258, 107);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Description: \r\nThe wife of the deceased Dr. Leonard Hale ";
+            this.label3.Text = "Description: The Wife. \r\nCalm and composed, Evelyn speaks softly and avoids unnec" +
+    "essary details.";
             // 
             // label4
             // 
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 360);
+            this.label4.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(24, 370);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(258, 66);
+            this.label4.Size = new System.Drawing.Size(258, 118);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Motive:";
+            this.label4.Text = "Motive: She and Dr. Hale had a complicated relationship, especially following rec" +
+    "ent changes to his will.";
             // 
             // label5
             // 
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(24, 454);
+            this.label5.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 507);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(258, 63);
+            this.label5.Size = new System.Drawing.Size(258, 106);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Alibi:";
+            this.label5.Text = "Alibi: She claims she spent the evening reading in her bedroom.";
             // 
             // examineEvelyn
             // 
             this.examineEvelyn.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineEvelyn.Location = new System.Drawing.Point(64, 613);
+            this.examineEvelyn.Location = new System.Drawing.Point(64, 697);
             this.examineEvelyn.Name = "examineEvelyn";
             this.examineEvelyn.Size = new System.Drawing.Size(176, 44);
             this.examineEvelyn.TabIndex = 5;
@@ -121,7 +123,7 @@
             // talkToEvelyn
             // 
             this.talkToEvelyn.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToEvelyn.Location = new System.Drawing.Point(64, 550);
+            this.talkToEvelyn.Location = new System.Drawing.Point(64, 634);
             this.talkToEvelyn.Name = "talkToEvelyn";
             this.talkToEvelyn.Size = new System.Drawing.Size(176, 44);
             this.talkToEvelyn.TabIndex = 6;
@@ -131,7 +133,7 @@
             // talkToMarcus
             // 
             this.talkToMarcus.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToMarcus.Location = new System.Drawing.Point(379, 550);
+            this.talkToMarcus.Location = new System.Drawing.Point(379, 634);
             this.talkToMarcus.Name = "talkToMarcus";
             this.talkToMarcus.Size = new System.Drawing.Size(176, 44);
             this.talkToMarcus.TabIndex = 13;
@@ -141,7 +143,7 @@
             // examineMarcus
             // 
             this.examineMarcus.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineMarcus.Location = new System.Drawing.Point(379, 613);
+            this.examineMarcus.Location = new System.Drawing.Point(379, 697);
             this.examineMarcus.Name = "examineMarcus";
             this.examineMarcus.Size = new System.Drawing.Size(176, 44);
             this.examineMarcus.TabIndex = 12;
@@ -151,32 +153,34 @@
             // label6
             // 
             this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(339, 454);
+            this.label6.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(339, 507);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(258, 63);
+            this.label6.Size = new System.Drawing.Size(258, 106);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Alibi:";
+            this.label6.Text = "Alibi: He claims he left the manor to take a drive and cool off before the storm " +
+    "worsened.";
             // 
             // label7
             // 
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label7.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(339, 360);
+            this.label7.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(339, 370);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(258, 66);
+            this.label7.Size = new System.Drawing.Size(258, 118);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Motive:";
+            this.label7.Text = "Motive: Witnesses report a heated argument between him and his father earlier tha" +
+    "t night.";
             // 
             // label8
             // 
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(339, 241);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(258, 96);
+            this.label8.Size = new System.Drawing.Size(258, 107);
             this.label8.TabIndex = 9;
-            this.label8.Text = "Description: \r\nThe son of the deceased Dr. Leonard Hale \r\n";
+            this.label8.Text = "Description: The Son.\r\nMarcus appears tense and defensive.";
             // 
             // label9
             // 
@@ -200,7 +204,7 @@
             // talkToNina
             // 
             this.talkToNina.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToNina.Location = new System.Drawing.Point(698, 550);
+            this.talkToNina.Location = new System.Drawing.Point(698, 634);
             this.talkToNina.Name = "talkToNina";
             this.talkToNina.Size = new System.Drawing.Size(176, 44);
             this.talkToNina.TabIndex = 20;
@@ -210,7 +214,7 @@
             // examineNina
             // 
             this.examineNina.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineNina.Location = new System.Drawing.Point(698, 613);
+            this.examineNina.Location = new System.Drawing.Point(698, 697);
             this.examineNina.Name = "examineNina";
             this.examineNina.Size = new System.Drawing.Size(176, 44);
             this.examineNina.TabIndex = 19;
@@ -220,32 +224,34 @@
             // label11
             // 
             this.label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label11.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(658, 454);
+            this.label11.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(658, 507);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(258, 63);
+            this.label11.Size = new System.Drawing.Size(258, 106);
             this.label11.TabIndex = 18;
-            this.label11.Text = "Alibi:";
+            this.label11.Text = "Alibi: She claims she was preparing presentation materials in the guest room.";
             // 
             // label12
             // 
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label12.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(658, 360);
+            this.label12.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(658, 370);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(258, 66);
+            this.label12.Size = new System.Drawing.Size(258, 118);
             this.label12.TabIndex = 17;
-            this.label12.Text = "Motive:";
+            this.label12.Text = "Motive: She worked closely with Dr. Hale and had disagreements over research owne" +
+    "rship.";
             // 
             // label13
             // 
             this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(658, 241);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(258, 96);
+            this.label13.Size = new System.Drawing.Size(258, 107);
             this.label13.TabIndex = 16;
-            this.label13.Text = "Description: \r\nThe colleague  of the deceased Dr. Leonard Hale \r\n";
+            this.label13.Text = "Description: The Colleague.\r\nDr. Brooks is professional but visibly unsettled by " +
+    "the situation.";
             // 
             // label14
             // 
@@ -269,7 +275,7 @@
             // talkToOliver
             // 
             this.talkToOliver.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToOliver.Location = new System.Drawing.Point(1010, 550);
+            this.talkToOliver.Location = new System.Drawing.Point(1010, 634);
             this.talkToOliver.Name = "talkToOliver";
             this.talkToOliver.Size = new System.Drawing.Size(176, 44);
             this.talkToOliver.TabIndex = 27;
@@ -279,7 +285,7 @@
             // examineOliver
             // 
             this.examineOliver.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineOliver.Location = new System.Drawing.Point(1010, 613);
+            this.examineOliver.Location = new System.Drawing.Point(1010, 697);
             this.examineOliver.Name = "examineOliver";
             this.examineOliver.Size = new System.Drawing.Size(176, 44);
             this.examineOliver.TabIndex = 26;
@@ -289,32 +295,35 @@
             // label16
             // 
             this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label16.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(970, 454);
+            this.label16.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(970, 507);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(258, 63);
+            this.label16.Size = new System.Drawing.Size(258, 106);
             this.label16.TabIndex = 25;
-            this.label16.Text = "Alibi:";
+            this.label16.Text = "Alibi: He insists he was busy serving dinner and cleaning downstairs during the t" +
+    "ime of death.";
             // 
             // label17
             // 
             this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label17.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(970, 360);
+            this.label17.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(970, 370);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(258, 66);
+            this.label17.Size = new System.Drawing.Size(258, 118);
             this.label17.TabIndex = 24;
-            this.label17.Text = "Motive:";
+            this.label17.Text = "Motive: There were rumors that the deceased-- Leonard Hale was going to fire him." +
+    "";
             // 
             // label18
             // 
             this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label18.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(970, 241);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(258, 96);
+            this.label18.Size = new System.Drawing.Size(258, 107);
             this.label18.TabIndex = 23;
-            this.label18.Text = "Description: \r\nThe butler of the manor";
+            this.label18.Text = "Description: The Butler.\r\nHaving served the Hale family for over twenty years, Ol" +
+    "iver knows the manor intimately.";
             // 
             // label19
             // 
@@ -338,7 +347,7 @@
             // closeButton
             // 
             this.closeButton.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(443, 698);
+            this.closeButton.Location = new System.Drawing.Point(434, 781);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(357, 40);
             this.closeButton.TabIndex = 28;
@@ -351,7 +360,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1253, 763);
+            this.ClientSize = new System.Drawing.Size(1253, 833);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.talkToOliver);
             this.Controls.Add(this.examineOliver);

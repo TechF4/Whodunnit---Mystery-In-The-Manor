@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Final_Project_Whodunnit
 {
-    public partial class suspectsForm : Form
+    public partial class deadPersonForm : Form
     {
-        public suspectsForm()
+        public deadPersonForm()
         {
             InitializeComponent();
         }

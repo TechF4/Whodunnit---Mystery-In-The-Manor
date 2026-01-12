@@ -34,6 +34,7 @@
             this.storyButton = new System.Windows.Forms.Button();
             this.studyRoom = new System.Windows.Forms.PictureBox();
             this.victimButton = new System.Windows.Forms.Button();
+            this.narratorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.studyRoom)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +85,7 @@
             this.storyButton.Name = "storyButton";
             this.storyButton.Size = new System.Drawing.Size(127, 37);
             this.storyButton.TabIndex = 6;
-            this.storyButton.Text = "Story";
+            this.storyButton.Text = "Instructions";
             this.storyButton.UseVisualStyleBackColor = false;
             this.storyButton.Click += new System.EventHandler(this.storyButton_Click);
             // 
@@ -110,11 +111,25 @@
             this.victimButton.UseVisualStyleBackColor = false;
             this.victimButton.Click += new System.EventHandler(this.victimButton_Click);
             // 
+            // narratorLabel
+            // 
+            this.narratorLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.narratorLabel.Font = new System.Drawing.Font("Baskerville Old Face", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.narratorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.narratorLabel.Location = new System.Drawing.Point(40, 868);
+            this.narratorLabel.Name = "narratorLabel";
+            this.narratorLabel.Size = new System.Drawing.Size(670, 121);
+            this.narratorLabel.TabIndex = 8;
+            this.narratorLabel.Text = "The study is quiet and dimly lit. Rain taps against the windows.    (Click)";
+            this.narratorLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(762, 788);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(762, 950);
+            this.Controls.Add(this.narratorLabel);
             this.Controls.Add(this.victimButton);
             this.Controls.Add(this.storyButton);
             this.Controls.Add(this.suspectsButton);
@@ -137,6 +152,7 @@
         private System.Windows.Forms.Button suspectsButton;
         private System.Windows.Forms.Button storyButton;
         private System.Windows.Forms.Button victimButton;
+        private System.Windows.Forms.Label narratorLabel;
     }
 }
 

@@ -16,16 +16,12 @@ namespace Final_Project_Whodunnit
         {
             InitializeComponent();
 
-            storyLabel.Text = " Dr. Leonard Hale is found dead in his" +
-               " locked study during a storm. Four suspects were in " +
-               "the mansion that night: his wife Evelyn, his son Marcus," +
-               " his colleague Dr. Nina Brooks, and the butler Oliver Grant." +
-               " The player investigates rooms and objects to discover clues." +
-               " Real evidence points to poisoning (Digitalis) and access" +
-               " logs show who could have taken it. Fake evidence " +
-               "(muddy shoes, open window) is placed to mislead." +
-               " The player uses evidence and interviews to identify " +
-               "the killer.";
+            storyLabel.Text = "How to play: \n The victim and suspects buttons give you more information about them. " +
+                "The evidence form will have the evidence/clue that you already found shown. Once you have discovered " +
+                "all of the evidence/clues, you will be presented with the decision to pick who you think " +
+                "did it. Be careful to not select the wrong person, there will be consequences... \r\n" +
+                "Not every clue tells the truth.\r\nSome evidence exists only to distract you.\r\nFocus on " +
+                "opportunity, access, and timing—not just motive.\r\n";
         }
 
         private void storyForm_Load(object sender, EventArgs e)
@@ -36,6 +32,11 @@ namespace Final_Project_Whodunnit
         private void storyLabel_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
