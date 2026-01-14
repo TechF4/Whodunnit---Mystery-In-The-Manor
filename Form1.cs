@@ -75,6 +75,16 @@ namespace Final_Project_Whodunnit
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Add code when the user clicks on the wine glass
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         // If the game has ended, make sure to use close all of the other forms one by one
     }
 }
