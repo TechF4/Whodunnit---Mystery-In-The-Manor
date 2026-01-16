@@ -34,10 +34,12 @@
             this.storyButton = new System.Windows.Forms.Button();
             this.victimButton = new System.Windows.Forms.Button();
             this.narratorLabel = new System.Windows.Forms.Label();
+            this.medicalCabinetPicture = new System.Windows.Forms.PictureBox();
             this.windowEvidence = new System.Windows.Forms.PictureBox();
             this.journalEvidence = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.studyRoom = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.medicalCabinetPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.windowEvidence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.journalEvidence)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -113,12 +115,23 @@
             this.narratorLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.narratorLabel.Font = new System.Drawing.Font("Baskerville Old Face", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.narratorLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.narratorLabel.Location = new System.Drawing.Point(68, 767);
+            this.narratorLabel.Location = new System.Drawing.Point(63, 826);
             this.narratorLabel.Name = "narratorLabel";
-            this.narratorLabel.Size = new System.Drawing.Size(928, 121);
+            this.narratorLabel.Size = new System.Drawing.Size(1035, 121);
             this.narratorLabel.TabIndex = 8;
             this.narratorLabel.Text = "The study is quiet and dimly lit. Rain taps against the windows.    (Click)";
             this.narratorLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // medicalCabinetPicture
+            // 
+            this.medicalCabinetPicture.BackgroundImage = global::Final_Project_Whodunnit.Properties.Resources.Untitled_design__16_;
+            this.medicalCabinetPicture.Image = global::Final_Project_Whodunnit.Properties.Resources.Untitled_design__16_1;
+            this.medicalCabinetPicture.Location = new System.Drawing.Point(1123, 79);
+            this.medicalCabinetPicture.Name = "medicalCabinetPicture";
+            this.medicalCabinetPicture.Size = new System.Drawing.Size(142, 193);
+            this.medicalCabinetPicture.TabIndex = 12;
+            this.medicalCabinetPicture.TabStop = false;
+            this.medicalCabinetPicture.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
             // windowEvidence
             // 
@@ -140,13 +153,14 @@
             this.journalEvidence.Size = new System.Drawing.Size(427, 161);
             this.journalEvidence.TabIndex = 10;
             this.journalEvidence.TabStop = false;
+            this.journalEvidence.Click += new System.EventHandler(this.journalEvidence_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Final_Project_Whodunnit.Properties.Resources.Untitled_design__13_;
             this.pictureBox1.Location = new System.Drawing.Point(350, 407);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 207);
+            this.pictureBox1.Size = new System.Drawing.Size(115, 207);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -156,7 +170,7 @@
             this.studyRoom.BackgroundImage = global::Final_Project_Whodunnit.Properties.Resources.Untitled_design__11_;
             this.studyRoom.Location = new System.Drawing.Point(-3, 0);
             this.studyRoom.Name = "studyRoom";
-            this.studyRoom.Size = new System.Drawing.Size(1294, 865);
+            this.studyRoom.Size = new System.Drawing.Size(1325, 865);
             this.studyRoom.TabIndex = 0;
             this.studyRoom.TabStop = false;
             // 
@@ -165,7 +179,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1231, 868);
+            this.ClientSize = new System.Drawing.Size(1231, 941);
+            this.Controls.Add(this.medicalCabinetPicture);
             this.Controls.Add(this.windowEvidence);
             this.Controls.Add(this.journalEvidence);
             this.Controls.Add(this.pictureBox1);
@@ -179,6 +194,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.medicalCabinetPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.windowEvidence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.journalEvidence)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -199,6 +215,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox journalEvidence;
         private System.Windows.Forms.PictureBox windowEvidence;
+        private System.Windows.Forms.PictureBox medicalCabinetPicture;
     }
 }
 

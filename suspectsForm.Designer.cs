@@ -60,6 +60,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.narratorLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -110,42 +111,46 @@
             // examineEvelyn
             // 
             this.examineEvelyn.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineEvelyn.Location = new System.Drawing.Point(63, 758);
+            this.examineEvelyn.Location = new System.Drawing.Point(64, 695);
             this.examineEvelyn.Name = "examineEvelyn";
             this.examineEvelyn.Size = new System.Drawing.Size(176, 44);
             this.examineEvelyn.TabIndex = 5;
             this.examineEvelyn.Text = "Examine";
             this.examineEvelyn.UseVisualStyleBackColor = true;
+            this.examineEvelyn.Click += new System.EventHandler(this.examineEvelyn_Click);
             // 
             // talkToEvelyn
             // 
             this.talkToEvelyn.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToEvelyn.Location = new System.Drawing.Point(63, 695);
+            this.talkToEvelyn.Location = new System.Drawing.Point(64, 758);
             this.talkToEvelyn.Name = "talkToEvelyn";
             this.talkToEvelyn.Size = new System.Drawing.Size(176, 44);
             this.talkToEvelyn.TabIndex = 6;
             this.talkToEvelyn.Text = "Talk To";
             this.talkToEvelyn.UseVisualStyleBackColor = true;
+            this.talkToEvelyn.Click += new System.EventHandler(this.talkToEvelyn_Click);
             // 
             // talkToMarcus
             // 
             this.talkToMarcus.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToMarcus.Location = new System.Drawing.Point(378, 695);
+            this.talkToMarcus.Location = new System.Drawing.Point(377, 758);
             this.talkToMarcus.Name = "talkToMarcus";
             this.talkToMarcus.Size = new System.Drawing.Size(176, 44);
             this.talkToMarcus.TabIndex = 13;
             this.talkToMarcus.Text = "Talk To";
             this.talkToMarcus.UseVisualStyleBackColor = true;
+            this.talkToMarcus.Click += new System.EventHandler(this.talkToMarcus_Click);
             // 
             // examineMarcus
             // 
             this.examineMarcus.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineMarcus.Location = new System.Drawing.Point(378, 758);
+            this.examineMarcus.Location = new System.Drawing.Point(377, 695);
             this.examineMarcus.Name = "examineMarcus";
             this.examineMarcus.Size = new System.Drawing.Size(176, 44);
             this.examineMarcus.TabIndex = 12;
             this.examineMarcus.Text = "Examine";
             this.examineMarcus.UseVisualStyleBackColor = true;
+            this.examineMarcus.Click += new System.EventHandler(this.examineMarcus_Click);
             // 
             // label6
             // 
@@ -201,7 +206,7 @@
             // talkToNina
             // 
             this.talkToNina.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToNina.Location = new System.Drawing.Point(697, 695);
+            this.talkToNina.Location = new System.Drawing.Point(698, 758);
             this.talkToNina.Name = "talkToNina";
             this.talkToNina.Size = new System.Drawing.Size(176, 44);
             this.talkToNina.TabIndex = 20;
@@ -211,12 +216,13 @@
             // examineNina
             // 
             this.examineNina.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineNina.Location = new System.Drawing.Point(697, 758);
+            this.examineNina.Location = new System.Drawing.Point(698, 695);
             this.examineNina.Name = "examineNina";
             this.examineNina.Size = new System.Drawing.Size(176, 44);
             this.examineNina.TabIndex = 19;
             this.examineNina.Text = "Examine";
             this.examineNina.UseVisualStyleBackColor = true;
+            this.examineNina.Click += new System.EventHandler(this.examineNina_Click);
             // 
             // label11
             // 
@@ -272,7 +278,7 @@
             // talkToOliver
             // 
             this.talkToOliver.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talkToOliver.Location = new System.Drawing.Point(1011, 695);
+            this.talkToOliver.Location = new System.Drawing.Point(1014, 758);
             this.talkToOliver.Name = "talkToOliver";
             this.talkToOliver.Size = new System.Drawing.Size(176, 44);
             this.talkToOliver.TabIndex = 27;
@@ -282,7 +288,7 @@
             // examineOliver
             // 
             this.examineOliver.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.examineOliver.Location = new System.Drawing.Point(1011, 758);
+            this.examineOliver.Location = new System.Drawing.Point(1014, 695);
             this.examineOliver.Name = "examineOliver";
             this.examineOliver.Size = new System.Drawing.Size(176, 44);
             this.examineOliver.TabIndex = 26;
@@ -344,9 +350,9 @@
             // closeButton
             // 
             this.closeButton.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(432, 822);
+            this.closeButton.Location = new System.Drawing.Point(1010, 875);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(357, 40);
+            this.closeButton.Size = new System.Drawing.Size(213, 39);
             this.closeButton.TabIndex = 28;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
@@ -388,12 +394,22 @@
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
+            // narratorLabel
+            // 
+            this.narratorLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.narratorLabel.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.narratorLabel.Location = new System.Drawing.Point(23, 832);
+            this.narratorLabel.Name = "narratorLabel";
+            this.narratorLabel.Size = new System.Drawing.Size(943, 118);
+            this.narratorLabel.TabIndex = 33;
+            // 
             // suspectsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1253, 872);
+            this.ClientSize = new System.Drawing.Size(1247, 982);
+            this.Controls.Add(this.narratorLabel);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -470,5 +486,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label narratorLabel;
     }
 }
