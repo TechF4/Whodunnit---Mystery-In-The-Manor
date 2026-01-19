@@ -59,7 +59,25 @@ namespace Final_Project_Whodunnit
 
         private void examineNina_Click(object sender, EventArgs e)
         {
+            narratorLabel.Text = "Dr. Brooks maintains a professional demeanor, though fatigue lines " +
+                "her face.\r\nHer expression sharpens whenever the investigation turns toward Hale’s research.\r\n";
+        }
 
+        private void talkToNina_Click(object sender, EventArgs e)
+        {
+            narratorLabel.Text = "“Leonard and I disagreed,” she says.\r\n“But professionally. Not violently.”\r\n";
+        }
+
+        private void examineOliver_Click(object sender, EventArgs e)
+        {
+            narratorLabel.Text = "Oliver Grant stands straight, hands folded neatly in front of " +
+                "him.\r\nHis expression is solemn, shaped by years of quiet service.\r\n";
+        }
+
+        private void talkToOliver_Click(object sender, EventArgs e)
+        {
+            narratorLabel.Text = "“Dinner was served at half past nine,” Oliver explains.\r\n“After that, " +
+                "Dr. Hale took his glass upstairs.”\r\n";
         }
     }
 }

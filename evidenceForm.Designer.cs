@@ -51,6 +51,7 @@
             this.Controls.Add(this.closeButton);
             this.Name = "evidenceForm";
             this.Text = "evidenceForm";
+            this.Load += new System.EventHandler(this.evidenceForm_Load);
             this.ResumeLayout(false);
 
         }

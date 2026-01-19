@@ -212,6 +212,7 @@
             this.talkToNina.TabIndex = 20;
             this.talkToNina.Text = "Talk To";
             this.talkToNina.UseVisualStyleBackColor = true;
+            this.talkToNina.Click += new System.EventHandler(this.talkToNina_Click);
             // 
             // examineNina
             // 
@@ -284,6 +285,7 @@
             this.talkToOliver.TabIndex = 27;
             this.talkToOliver.Text = "Talk To";
             this.talkToOliver.UseVisualStyleBackColor = true;
+            this.talkToOliver.Click += new System.EventHandler(this.talkToOliver_Click);
             // 
             // examineOliver
             // 
@@ -294,6 +296,7 @@
             this.examineOliver.TabIndex = 26;
             this.examineOliver.Text = "Examine";
             this.examineOliver.UseVisualStyleBackColor = true;
+            this.examineOliver.Click += new System.EventHandler(this.examineOliver_Click);
             // 
             // label16
             // 

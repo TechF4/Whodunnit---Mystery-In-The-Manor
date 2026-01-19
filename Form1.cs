@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,14 +18,18 @@ namespace Final_Project_Whodunnit
             InitializeComponent();
         }
 
+        string filePath = @"C:\Users\techn\OneDrive\Desktop\whodunnitGame.txt";
+
+        bool gameEnd = false;
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
         string[] suspectList = { "Evelyn", "Marcus", "Dr. Nina", "Oliver Grant" };
-        string[] realEvidence = { "Digitalis" };
-        string[] fakeEvidence = { "Muddy Shoes", "Open Window" };
+        string[] realEvidence = { "Wine", "Digitalis", "Journal", "Medical Log" };
+        string[] fakeEvidence = { "Open Window", "Muddy Shoes" };
 
 
         suspectsForm suspectsForm = new suspectsForm();
@@ -79,33 +84,42 @@ namespace Final_Project_Whodunnit
         private void pictureBox1_Click(object sender, EventArgs e) // Wine Glass
         {
             wineTimesClicked++;
+            wineGlassClick(wineTimesClicked);
+        }
 
-            if (wineTimesClicked == 1)
+        void wineGlassClick(int clickedNumber)
+        {
+            switch (clickedNumber)
             {
-                narratorLabel.Text = "Wine Glass: The wine glass is half full and resting near the edge of the desk.    (Click)";
-            }
-
-            if (wineTimesClicked == 2)
-            {
-                narratorLabel.Text = "Wine Glass: The liquid appears darker than expected, " +
+                case 1:
+                    narratorLabel.Text = "Wine Glass: The wine glass is half full and resting near the edge of the desk.  " +
+                    "  (Click)";
+                    break;
+                case 2:
+                    narratorLabel.Text = "Wine Glass: The liquid appears darker than expected, " +
                     "and a faint residue clings to the inside of the glass.    (Click)";
-            }
+                    break;
+                case 3:
+                    narratorLabel.Text = "Wine Glass: The smell is slightly bitter—unusual for such an expensive wine.";
+                    break;
+                case 4:
+                    narratorLabel.Text = "Wine Glass: Whatever was added to this drink was meant to go unnoticed." +
+                    " \n Wine Glass saved as evidence";
 
-            if (wineTimesClicked == 3)
-            {
-                narratorLabel.Text = "Wine Glass: The smell is slightly bitter—unusual for such an expensive wine.";
-            }
+                    File.WriteAllText(filePath, "");
+                    using (StreamWriter writer = new StreamWriter(filePath))
+                    {
+                        writer.WriteLine(realEvidence[1]);
+                    }
+                    break;
+                case 5:
+                    narratorLabel.Text = "There are no more observations to be made from the wine glass";
+                    break;
+                default:
+                    narratorLabel.Text = "There are no more observations to be made from the wine glass";
+                    break;
 
-            if(wineTimesClicked == 4)
-            {
-                narratorLabel.Text = "Wine Glass: You’ve already examined the wine glass.";
             }
-
-            if(wineTimesClicked >= 5)
-            {
-                narratorLabel.Text = "Wine Glass: Whatever was added to this drink was meant to go unnoticed.";
-            }
-
         }
 
         int windowTimesClicked = 0;
@@ -128,10 +142,23 @@ namespace Final_Project_Whodunnit
                 narratorLabel.Text = "Window: Looking closer, the damage appears to be from the inside, not outside.";
             }
 
-            if (windowTimesClicked >= 4)
+            if (windowTimesClicked == 4)
             {
-                narratorLabel.Text = "Window: There are no signs of anyone entering through the window.";
+                narratorLabel.Text = "Window: There are no signs of anyone entering through the window. \n Window" +
+                    "saved as evidence";
+
+                File.WriteAllText(filePath, "");
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    writer.WriteLine(fakeEvidence[1]);
+                }
             }
+
+            if (windowTimesClicked >= 5)
+            {
+                narratorLabel.Text = "There are no more observations to be made from the Open Window";
+            }
+
         }
 
         int journalTimesClicked = 0;
@@ -194,7 +221,7 @@ namespace Final_Project_Whodunnit
                     "shortly before Dr. Hale’s death.";
             }
 
-            
+
 
             // If I have time add one more thing when key is found
 
