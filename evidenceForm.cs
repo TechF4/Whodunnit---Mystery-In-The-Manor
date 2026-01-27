@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Student Name: Sena Unal
+ *  Class: ICS3U
+ *  Game Name: The Mystery At The Manor
+ *  Project Completed: 2026/01/26
+ *  
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +21,7 @@ namespace Final_Project_Whodunnit
 {
     public partial class evidenceForm : Form
     {
+        // The file for storing all of the info
         string filePath = @"C:\Users\techn\OneDrive\Desktop\whodunnitGame.txt";
         public evidenceForm()
         {
@@ -20,7 +29,7 @@ namespace Final_Project_Whodunnit
             
         }
 
-
+        // Hides this form (but doesn't close it because it gets destroyed once it is closed)
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -62,26 +71,49 @@ namespace Final_Project_Whodunnit
 
                 if (evidence == "Wine Glass")
                 {
-                    wineGlassLabel.Text = "Wine Glass";
+                    // If the wine glass is found then displays this message and shows the picture
+                    wineGlassLabel.Text = "Wine Glass found. \n Poison mixed into the wine to kill.";
+                    wineGlassPicture.Visible = true;
                 }
+
                 else if (evidence == "Journal")
                 {
-                    journalLabel.Text = "Journal";
+                    // If the journal is found then displays this message and shows the picture
+                    journalLabel.Text = "Journal found. \n The wife doesn't like reading.";
+                    journalEvidence.Visible = true;
                 }
+
                 else if (evidence == "Medical Log")
                 {
-                    medicalCabinetLabel.Text = "Medical Log";
+                    // If the medical log is found then displays this message and shows the picture
+                    medicalCabinetLabel.Text = "Medical Log found. \n Digitalis taken out earlier.";
+                    medicalCabinetPicture.Visible = true;
                 }
+
                 else if (evidence == "Open Window")
                 {
-                    openWindowLabel.Text = "Open Window";
+                    // If the open window is found then displays this message and shows the picture
+                    openWindowLabel.Text = "Open Window. \n The window was left open.";
+                    windowEvidence.Visible = true;
                 }
             }
         }
 
+        // When the evidence form is active
         private void evidenceForm_Activated_1(object sender, EventArgs e)
         {
+            // Calls the function
             LoadEvidenceFromFile();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wineGlassLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

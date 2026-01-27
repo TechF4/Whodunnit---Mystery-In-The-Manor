@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Student Name: Sena Unal
+ *  Class: ICS3U
+ *  Game Name: The Mystery At The Manor
+ *  Project Completed: 2026/01/26
+ *  
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +27,16 @@ namespace Final_Project_Whodunnit
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Turns the image, label, button to false
             firstImage.Visible = false;
             titleLabel.Visible = false; 
             startButton.Visible = false;
 
+            // Turns the button and label true
             beginButton.Visible = true;
             storyLabel.Visible = true;
+
+            // Displays the text which explains the story
             storyLabel.Text += "Ravenwood Manor sits on the edge of town, isolated and silent beneath a relentless storm." +
                 "\r\n\r\nLate last night, Dr. Leonard Hale, a renowned scientist and wealthy estate owner, was found " +
                 "dead in his private study. The door was locked from the inside. There were no signs of a " +
@@ -42,6 +54,7 @@ namespace Final_Project_Whodunnit
 
         }
 
+        // Closes the titleForm
         private void beginButton_Click(object sender, EventArgs e)
         {
             this.Close();

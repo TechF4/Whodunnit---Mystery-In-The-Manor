@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.roomsButton = new System.Windows.Forms.Button();
+            this.accuseButton = new System.Windows.Forms.Button();
             this.evidenceButton = new System.Windows.Forms.Button();
             this.suspectsButton = new System.Windows.Forms.Button();
             this.storyButton = new System.Windows.Forms.Button();
@@ -46,17 +46,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.studyRoom)).BeginInit();
             this.SuspendLayout();
             // 
-            // roomsButton
+            // accuseButton
             // 
-            this.roomsButton.BackColor = System.Drawing.Color.Black;
-            this.roomsButton.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomsButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.roomsButton.Location = new System.Drawing.Point(12, 202);
-            this.roomsButton.Name = "roomsButton";
-            this.roomsButton.Size = new System.Drawing.Size(137, 37);
-            this.roomsButton.TabIndex = 3;
-            this.roomsButton.Text = "Rooms";
-            this.roomsButton.UseVisualStyleBackColor = false;
+            this.accuseButton.BackColor = System.Drawing.Color.Black;
+            this.accuseButton.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accuseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.accuseButton.Location = new System.Drawing.Point(12, 202);
+            this.accuseButton.Name = "accuseButton";
+            this.accuseButton.Size = new System.Drawing.Size(137, 37);
+            this.accuseButton.TabIndex = 3;
+            this.accuseButton.Text = "Accuse";
+            this.accuseButton.UseVisualStyleBackColor = false;
+            this.accuseButton.Visible = false;
+            this.accuseButton.Click += new System.EventHandler(this.accuseButton_Click);
             // 
             // evidenceButton
             // 
@@ -189,7 +191,7 @@
             this.Controls.Add(this.storyButton);
             this.Controls.Add(this.suspectsButton);
             this.Controls.Add(this.evidenceButton);
-            this.Controls.Add(this.roomsButton);
+            this.Controls.Add(this.accuseButton);
             this.Controls.Add(this.studyRoom);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -206,7 +208,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox studyRoom;
-        private System.Windows.Forms.Button roomsButton;
+        private System.Windows.Forms.Button accuseButton;
         private System.Windows.Forms.Button evidenceButton;
         private System.Windows.Forms.Button suspectsButton;
         private System.Windows.Forms.Button storyButton;

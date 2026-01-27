@@ -49,14 +49,14 @@
             this.storyLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.storyLabel.Location = new System.Drawing.Point(30, 111);
             this.storyLabel.Name = "storyLabel";
-            this.storyLabel.Size = new System.Drawing.Size(598, 527);
+            this.storyLabel.Size = new System.Drawing.Size(598, 632);
             this.storyLabel.TabIndex = 2;
             this.storyLabel.Click += new System.EventHandler(this.storyLabel_Click);
             // 
             // closeButton
             // 
             this.closeButton.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.closeButton.Location = new System.Drawing.Point(240, 669);
+            this.closeButton.Location = new System.Drawing.Point(219, 776);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(193, 39);
             this.closeButton.TabIndex = 29;
@@ -69,7 +69,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(658, 746);
+            this.ClientSize = new System.Drawing.Size(658, 842);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.storyLabel);
             this.Controls.Add(this.label1);

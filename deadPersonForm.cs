@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Student Name: Sena Unal
+ *  Class: ICS3U
+ *  Game Name: The Mystery At The Manor
+ *  Project Completed: 2026/01/26
+ *  
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +25,7 @@ namespace Final_Project_Whodunnit
             InitializeComponent();
         }
 
+        // Hides this form (but doesn't close it because it gets destroyed once it is closed)
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Hide();

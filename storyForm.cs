@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * Student Name: Sena Unal
+ *  Class: ICS3U
+ *  Game Name: The Mystery At The Manor
+ *  Project Completed: 2026/01/26
+ *  
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,11 +25,13 @@ namespace Final_Project_Whodunnit
         {
             InitializeComponent();
 
+            // Shows the instructions
             storyLabel.Text = "How to play: \n The victim and suspects buttons give you more information about them. " +
                 "The evidence form will have the evidence/clue that you already found shown. Once you have discovered " +
                 "all of the evidence/clues, you will be presented with the decision to pick who you think " +
                 "did it. Be careful to not select the wrong person, there will be consequences... Hint: Once you have found " +
-                "new evidence, go back and check with the suspects.\r\n" +
+                "new evidence, go back and check with the suspects.\r\n IMPORTANT: Do NOT click on the accuse button" +
+                "before having your opinion on who it is. One clicked, the game does not go back. \n" +
                 "Not every clue tells the truth.\r\nSome evidence exists only to distract you.\r\nFocus on " +
                 "opportunity, access, and timing—not just motive.\r\n";
         }
